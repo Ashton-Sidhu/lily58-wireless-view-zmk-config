@@ -30,7 +30,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>,
-                <&macro_release>;
+                <&macro_release <&kp &LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>;
 
             label = "MQUIT";
             wait-ms = <0>;
@@ -43,7 +43,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>,
-                <&macro_release>;
+                <&macro_release &LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>;
 
             label = "MFULLSCREEN";
         };
@@ -54,7 +54,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>,
-                <&macro_release>;
+                <&macro_release &LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>;
 
             label = "MMOUSE";
         };
@@ -65,7 +65,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>,
-                <&macro_release>;
+                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>;
 
             label = "MSTATS";
         };
@@ -76,7 +76,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>,
-                <&macro_release>;
+                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
 
             label = "NEW_MACRO";
         };
@@ -86,8 +86,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>,
-                <&macro_release>;
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp V>,
+                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp V>;
 
             label = "MPASTE";
         };
