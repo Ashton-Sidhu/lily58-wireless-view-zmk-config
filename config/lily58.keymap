@@ -98,7 +98,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>,
-                <&macro_release>
+                <&macro_release>,
                 <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>;
 
             label = "SCREENSHOT";
