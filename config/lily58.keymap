@@ -13,8 +13,64 @@
         workpw: workpw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(S) &kp N &kp E &kp H &kp A &kp N1 &kp N9 &kp N9 &kp N4 &kp LS(S) &kp I &kp M &kp R &kp A &kp N &kp N1 &kp N9 &kp N9 &kp N6 &kp EXCL>;
+            bindings = <&kp LS(S) &kp N &kp E &kp H &kp A &kp N1 &kp N9 &kp N9 &kp N4 &kp LS(S) &kp I &kp M &kp R &kp A &kp N &kp N1 &kp N9 &kp N9 &kp N6 &kp EXCL>;
             label = "WORKPW";
+        };
+
+        homepw: homepw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp I &kp C &kp K &kp M &kp A &kp N &kp N1>;
+            label = "HOMEPW";
+        };
+
+        mquit: mquit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>;
+            label = "MQUIT";
+        };
+
+        mfullscreen: mfullscreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>;
+            label = "MFULLSCREEN";
+        };
+
+        mmouse: mmouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>;
+            label = "MMOUSE";
+        };
+
+        mstats: mstats {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>;
+            label = "MSTATS";
+        };
+
+        mmk: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
+            label = "NEW_MACRO";
+        };
+
+        mpaste: mpaste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
+            label = "MPASTE";
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>;
+            label = "SCREENSHOT";
         };
     };
 
@@ -71,11 +127,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans   &trans  &trans   &trans   &trans                     &trans          &trans          &trans        &trans     &trans    &trans
-&kp GRAVE  &kp N1   &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7          &kp N8        &kp N9     &kp N0    &trans
-&kp F1     &workpw  &kp F3  &kp F4   &kp F5   &kp F6                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans
-&kp F7     &kp F8   &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS     &kp MINUS       &kp EQUAL     &kp LBKT   &kp RBKT  &kp BSLH
-                            &trans   &trans   &trans   &trans    &trans  &trans          &trans          &trans
+&trans   &trans        &trans   &trans   &trans   &trans                     &trans          &trans          &trans        &trans     &trans    &trans
+&mmk     &mquit        &mmouse  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7          &kp N8        &kp N9     &kp N0    &trans
+&homepw  &screenshot   &mstats  &kp F4   &kp F5   &kp F6                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans
+&workpw  &mfullscreen  &kp F9   &kp F10  &mpaste  &kp F12  &trans    &trans  &kp KP_PLUS     &kp MINUS       &kp EQUAL     &kp LBKT   &kp RBKT  &kp BSLH
+                                &trans   &trans   &trans   &trans    &trans  &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
