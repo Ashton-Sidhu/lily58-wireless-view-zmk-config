@@ -29,6 +29,8 @@
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>;
             label = "MQUIT";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         mfullscreen: mfullscreen {
@@ -69,7 +71,10 @@
         screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>;
+
             label = "SCREENSHOT";
         };
     };
