@@ -30,7 +30,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>,
-                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>;
 
             label = "MQUIT";
             wait-ms = <0>;
@@ -43,7 +44,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>,
-                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>;
 
             label = "MFULLSCREEN";
         };
@@ -54,7 +56,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>,
-                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>;
 
             label = "MMOUSE";
         };
@@ -65,7 +68,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>,
-                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>;
 
             label = "MSTATS";
         };
@@ -76,7 +80,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>,
-                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
 
             label = "NEW_MACRO";
         };
@@ -87,7 +92,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp V>,
-                <&macro_release &kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp V>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp V>;
 
             label = "MPASTE";
         };
@@ -158,11 +164,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans   &trans        &trans   &trans   &trans   &trans                     &trans          &trans          &trans        &trans     &trans    &trans
-&mmk     &mquit        &mmouse  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7          &kp N8        &kp N9     &kp N0    &trans
-&homepw  &screenshot   &mstats  &kp F4   &kp F5   &kp F6                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans
-&workpw  &mfullscreen  &kp F9   &kp F10  &mpaste  &kp F12  &trans    &trans  &kp KP_PLUS     &kp MINUS       &kp EQUAL     &kp LBKT   &kp RBKT  &kp BSLH
-                                &trans   &trans   &trans   &trans    &trans  &trans          &trans          &trans
+&mquit   &mmouse       &trans        &trans   &trans   &trans                     &trans          &trans          &trans        &trans     &trans    &trans
+&mmk     &kp NUMBER_1  &kp NUMBER_2  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7          &kp N8        &kp N9     &kp N0    &trans
+&homepw  &screenshot   &mstats       &kp F4   &kp F5   &kp F6                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans
+&workpw  &mfullscreen  &kp F9        &kp F10  &mpaste  &kp F12  &trans    &trans  &kp KP_PLUS     &kp MINUS       &kp EQUAL     &kp LBKT   &kp RBKT  &kp BSLH
+                                     &trans   &trans   &trans   &trans    &trans  &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
