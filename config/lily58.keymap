@@ -27,7 +27,11 @@
         mquit: mquit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Q>,
+                <&macro_release>;
+
             label = "MQUIT";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -36,35 +40,55 @@
         mfullscreen: mfullscreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp X>,
+                <&macro_release>;
+
             label = "MFULLSCREEN";
         };
 
         mmouse: mmouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp M>,
+                <&macro_release>;
+
             label = "MMOUSE";
         };
 
         mstats: mstats {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp S>,
+                <&macro_release>;
+
             label = "MSTATS";
         };
 
         mmk: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>,
+                <&macro_release>;
+
             label = "NEW_MACRO";
         };
 
         mpaste: mpaste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp LEFT_SHIFT &kp Z>,
+                <&macro_release>;
+
             label = "MPASTE";
         };
 
@@ -73,7 +97,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>;
+                <&kp LCTRL &kp LCMD &kp LEFT_SHIFT &kp NUMBER_4>,
+                <&macro_release>;
 
             label = "SCREENSHOT";
         };
