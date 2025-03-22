@@ -176,11 +176,11 @@
 
         layer3 {
             bindings = <
-&trans   &mmouse       &trans   &trans  &trans   &trans                       &trans              &trans              &trans            &trans         &trans     &trans
-&mmk     &mquit        &trans   &trans  &trans   &kp LC(T)                    &trans              &trans              &trans            &trans         &kp LC(P)  &trans
-&homepw  &screenshot   &mstats  &trans  &trans   &kp LC(G)                    &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans     &trans
-&workpw  &mfullscreen  &trans   &trans  &mpaste  &trans     &trans    &trans  &trans              &trans              &trans            &trans         &trans     &trans
-                                &trans  &trans   &trans     &trans    &trans  &trans              &trans              &trans
+&trans   &mmouse       &trans   &trans  &trans   &trans                       &trans     &trans     &trans     &trans     &trans     &trans
+&mmk     &mquit        &trans   &trans  &trans   &kp LC(T)                    &trans     &trans     &trans     &trans     &kp LC(P)  &trans
+&homepw  &screenshot   &mstats  &trans  &trans   &kp LC(G)                    &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &trans     &trans
+&workpw  &mfullscreen  &trans   &trans  &mpaste  &trans     &trans    &trans  &trans     &trans     &trans     &trans     &trans     &trans
+                                &trans  &trans   &trans     &trans    &trans  &trans     &trans     &trans
             >;
         };
     };
